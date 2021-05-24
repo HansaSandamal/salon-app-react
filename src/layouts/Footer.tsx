@@ -3,11 +3,12 @@ import {MDBCol, MDBContainer, MDBRow, MDBFooter, MDBIcon, MDBBadge} from "mdbrea
 
 const Footer: React.FC = () => {
     return (
-        <MDBFooter color="elegant-color" className="font-small pt-4 mt-0">
+
+        <MDBFooter color="elegant-color" className="font-link-small pt-4 mt-0">
             <MDBContainer fluid className="text-center text-md-left">
                 <MDBRow>
                     <MDBCol md="4">
-                        <h5 className="title">Salon HUSH</h5>
+                        <h3 className="title">Salon HUSH</h3>
                         <p>
                             1122 Thomasville Rd., Ste. 6<br/>
                             Tallahassee, FL 32303<br/>
