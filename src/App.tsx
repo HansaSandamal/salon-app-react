@@ -6,12 +6,18 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import 'mdbreact/dist/css/mdb.css';
 import Footer from "./layouts/Footer";
+import Home from "./view/Home";
+import About from './view/About';
+
+
 
 
 function App() {
     return (
         <div className="App">
             <Header/>
+            <Home/>
+            <About/>
             <Footer/>
 
         </div>

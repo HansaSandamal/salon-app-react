@@ -1,0 +1,29 @@
+.page-holder {
+
+  position: relative;
+  text-align: center;
+  color: #938d8e;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2b2b2b;
+  opacity: 0.8;
+  padding: 40px 60px;
+  max-height: 30vh;
+
+
+}
+.text-head{
+  font-size:4vw;
+}
+.text-sub-head{
+  font-size:1vw;
+}
+
+.bg-cover {
+  background-size: cover !important;
+
+}
