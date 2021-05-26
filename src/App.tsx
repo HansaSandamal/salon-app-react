@@ -10,11 +10,13 @@ import Home from "./view/Home";
 
 
 
+
 function App() {
     return (
         <div className="App">
             <Header/>
             <Home/>
+
 
             <Footer/>
 

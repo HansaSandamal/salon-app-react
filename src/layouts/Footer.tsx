@@ -14,80 +14,55 @@ const Footer: React.FC = () => {
                             Tallahassee, FL 32303<br/>
                             850.224.1814<br/>
                             <MDBBadge color="elegant-color">
-                                <MDBIcon fab icon="facebook-f" />
+                                <MDBIcon fab icon="facebook-f"/>
                             </MDBBadge>
                             <MDBBadge className="badge ml-2 " color="elegant-color">
-                                <MDBIcon fab icon="instagram" />
+                                <MDBIcon fab icon="instagram"/>
                             </MDBBadge>
 
                         </p>
                     </MDBCol>
 
-                    <MDBCol md="1">
+                    <MDBCol md="4">
                         <h5 className="title">HOURS</h5>
+                        <ul>
+                            <li className="list-unstyled">
+                                Monday  <span className="date ml-3"> Closed</span>
+                            </li>
+                            <li className="list-unstyled">
+                                Tuesday <span className="date ml-4">9-8</span>
+                            </li>
+                            <li className="list-unstyled">
+                                Wednesday  <span className="date ml-2"> 9-8 </span>
+                            </li>
+                            <li className="list-unstyled">
+                                Thursday <span className="date ml-3"> 9-8 </span>
+                            </li>
+                            <li className="list-unstyled">
+                                Friday <span className="date ml-4"> 9-8 </span>
+                            </li>
+                            <li className="list-unstyled">
+                                Saturday <span className="date ml-3"> 9-6 </span>
+                            </li>
+                            <li className="list-unstyled">
+                                Sunday <span className="date ml-3"> Closed</span>
+                            </li>
+                        </ul>
 
-                        <ul>
-                            <li className="list-unstyled">
-                                Monday
-                            </li>
-                            <li className="list-unstyled">
-                                Tuesday
-                            </li>
-                            <li className="list-unstyled">
-                                Wednesday
-                            </li>
-                            <li className="list-unstyled">
-                                Thursday
-                            </li>
-                            <li className="list-unstyled">
-                                Friday
-                            </li>
-                            <li className="list-unstyled">
-                                Saturday
-                            </li>
-                            <li className="list-unstyled">
-                                Sunday
-                            </li>
-                        </ul>
                     </MDBCol>
-                    <MDBCol md="2">
-                        <h5 className="title"><br/></h5>
-                        <ul>
-                            <li className="list-unstyled">
-                                Closed
-                            </li>
-                            <li className="list-unstyled">
-                                9-8
-                            </li>
-                            <li className="list-unstyled">
-                                9-8
-                            </li>
-                            <li className="list-unstyled">
-                                9-8
-                            </li>
-                            <li className="list-unstyled">
-                                9-8
-                            </li>
-                            <li className="list-unstyled">
-                                9-6
-                            </li>
-                            <li className="list-unstyled">
-                                Closed
-                            </li>
-                        </ul>
-                    </MDBCol>
+
                     <MDBCol md="1">
 
                         <h5 className="title">EXPLORE</h5>
                         <ul>
                             <li className="list-unstyled">
-                                <a href="#">Services</a>
+                                <a href="#services">Services</a>
                             </li>
                             <li className="list-unstyled">
-                                <a href="#">Specials</a>
+                                <a href="#Specials">Specials</a>
                             </li>
                             <li className="list-unstyled">
-                                <a href="#">Contacts</a>
+                                <a href="#Contacts">Contacts</a>
                             </li>
 
                         </ul>
