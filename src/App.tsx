@@ -6,14 +6,15 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
 import 'mdbreact/dist/css/mdb.css';
 import Footer from "./layouts/Footer";
 import Home from "./view/Home";
 import About from './view/About';
 import Contact from './view/Contact';
+import Salon from './view/Salon';
+import Treatment from './view/Treatment';
 
 
 function App() {
@@ -29,8 +30,11 @@ function App() {
                     <Route path="/contacts">
                         <Contact/>
                     </Route>
-                    <Route path="/about">
-                        <About/>
+                    <Route path="/salon">
+                        <Salon/>
+                    </Route>
+                    <Route path="/treatments">
+                        <Treatment/>
                     </Route>
                     <Route path="/">
                         <Home/>

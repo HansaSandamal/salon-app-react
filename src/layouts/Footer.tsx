@@ -56,13 +56,13 @@ const Footer: React.FC = () => {
                         <h5 className="title">EXPLORE</h5>
                         <ul>
                             <li className="list-unstyled">
-                                <a href="#services">Services</a>
+                                <a href="/salon">Services</a>
                             </li>
                             <li className="list-unstyled">
                                 <a href="#Specials">Specials</a>
                             </li>
                             <li className="list-unstyled">
-                                <a href="#Contacts">Contacts</a>
+                                <a href="/contacts">Contacts</a>
                             </li>
 
                         </ul>

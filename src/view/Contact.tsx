@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
     const handleOnClick=()=>Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'Your work has been saved',
+        title: 'Your message has been send',
         showConfirmButton: false,
         timer: 1500
     });
