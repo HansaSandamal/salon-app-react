@@ -1,5 +1,5 @@
 import React from "react";
-import cover from "../assets/images/cv5.jpg";
+import cover from "../assets/images/cv4.jpg";
 import {Container, Image} from "react-bootstrap";
 import ServiceMenu from "../components/ServiceMenu";
 
