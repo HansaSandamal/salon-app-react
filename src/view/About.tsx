@@ -1,10 +1,12 @@
 import React from "react";
 import cv3 from "../assets/images/cv3.jpg";
 import {Image} from "react-bootstrap";
+import MetaDecorator from "../components/MetaDecorator";
 
 const About: React.FC = () => {
     return (
         <React.Fragment>
+            <MetaDecorator title={"salon HUSH | about"} description={"about"}/>
             <Image src={cv3} alt='cover' fluid/>
             <div className='content'>
                 <h1 className='font-link' ><b>ABOUT US</b></h1>

@@ -14,7 +14,7 @@ const Header:React.FC=()=>{
                         <NavDropdown.Item href="/salon">Salon</NavDropdown.Item>
 
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">HAIR TREATMENT</NavDropdown.Item>
+                        <NavDropdown.Item href="/treatments">HAIR TREATMENT</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/about">ABOUT US</Nav.Link>
                 </Nav>
