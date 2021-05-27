@@ -4,6 +4,7 @@ import {Button, Container, Form, Image} from "react-bootstrap";
 import { MDBIcon } from "mdbreact";
 
 import Swal from "sweetalert2";
+import MetaDecorator from "../components/MetaDecorator";
 
 const Contact: React.FC = () => {
     const handleOnClick=()=>Swal.fire({
@@ -17,6 +18,7 @@ const Contact: React.FC = () => {
     return (
 
         <Container fluid={true} className='content-contact'>
+            <MetaDecorator title={"salon HUSH | contacts"} description={"contacts"}/>
             <Image src={cv1} alt='cover' fluid/>
             <h1 className='font-link-title'><b>CONTACTS</b></h1>
             <div className="row justify-content-md-center">

@@ -2,12 +2,14 @@ import React from "react";
 import cover from "../assets/images/cv4.jpg";
 import {Container, Image} from "react-bootstrap";
 import ServiceMenu from "../components/ServiceMenu";
+import MetaDecorator from "../components/MetaDecorator";
 
 const Tratement: React.FC = (ImageState) => {
 
     return (
 
         <Container fluid={true} className='content-contact'>
+            <MetaDecorator title={"salon HUSH | services | treatements"} description={"hair treatments"}/>
             <Image src={cover} alt='cover' fluid/>
             <div className='container my-4'>
                 <h1 className='font-link'><b>HAIR TREATMENT</b></h1>

@@ -2,6 +2,7 @@ import React from "react";
 import cv2 from "../assets/images/cv2.jpg";
 import {Container, Image} from "react-bootstrap";
 import ServiceMenu from "../components/ServiceMenu";
+import MetaDecorator from "../components/MetaDecorator";
 
 
 const Salon: React.FC = () => {
@@ -10,6 +11,7 @@ const Salon: React.FC = () => {
     return (
 
         <Container fluid={true} className='content-contact'>
+            <MetaDecorator title={"salon HUSH | services"} description={"services"}/>
             <Image src={cv2} alt='cover' fluid/>
             <div className='container my-4'>
                 <h1 className='font-link'><b>Salon HUSH</b></h1>
