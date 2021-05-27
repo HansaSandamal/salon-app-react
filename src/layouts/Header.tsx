@@ -8,7 +8,7 @@ const Header:React.FC=()=>{
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#pricing">HOME</Nav.Link>
+                    <Nav.Link href="/">HOME</Nav.Link>
 
                     <NavDropdown title="SERVICES" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -17,11 +17,11 @@ const Header:React.FC=()=>{
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="#pricing">ABOUT US</Nav.Link>
+                    <Nav.Link href="/about">ABOUT US</Nav.Link>
                 </Nav>
                 <Nav>
                     <Nav.Link href="#deets">BOOK ONLINE</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
+                    <Nav.Link eventKey={2} href="/contacts">
                         CONTACTS
                     </Nav.Link>
                 </Nav>
