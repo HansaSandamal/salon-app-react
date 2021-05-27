@@ -8,6 +8,8 @@ import 'mdbreact/dist/css/mdb.css';
 import Footer from "./layouts/Footer";
 import Home from "./view/Home";
 import About from './view/About';
+import Contact from './view/Contact';
+
 
 
 
@@ -18,6 +20,7 @@ function App() {
             <Header/>
             <Home/>
             <About/>
+            <Contact/>
             <Footer/>
 
         </div>
