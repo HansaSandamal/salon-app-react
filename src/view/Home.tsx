@@ -1,5 +1,5 @@
 import React from "react";
-import cover from "../assets/images/cv7.jpg";
+import cover from "../assets/images/cv5.jpg";
 import {Image} from "react-bootstrap";
 
 const Home: React.FC = (ImageState) => {
