@@ -1,11 +1,13 @@
 import React from "react";
-import {Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Image, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import logo from "../assets/images/icon2.png";
 
-const Header:React.FC=()=>{
-    return(
+const Header: React.FC = () => {
+    return (
         <Navbar className='font-link' collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Salon HUSH</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Brand href="/"> <Image className="img-fluid img-thumbnail opacity-60 col-sm-12 " src={logo}
+                                           alt="cover" roundedCircle/></Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="/">HOME</Nav.Link>
@@ -13,7 +15,7 @@ const Header:React.FC=()=>{
                     <NavDropdown title="SERVICES" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/salon">Salon</NavDropdown.Item>
 
-                        <NavDropdown.Divider />
+                        <NavDropdown.Divider/>
                         <NavDropdown.Item href="/treatments">HAIR TREATMENT</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/about">ABOUT US</Nav.Link>
