@@ -1,5 +1,9 @@
 import React from "react";
 import {MDBCol, MDBContainer, MDBRow, MDBFooter, MDBIcon, MDBBadge} from "mdbreact";
+import logo from "../assets/images/icon.png";
+import {Image} from "react-bootstrap";
+
+
 
 const Footer: React.FC = () => {
     return (
@@ -7,7 +11,7 @@ const Footer: React.FC = () => {
         <MDBFooter color="elegant-color" className="font-link-small pt-4 mt-0">
             <MDBContainer fluid className="text-center text-md-left">
                 <MDBRow>
-                    <MDBCol md="4">
+                    <MDBCol md="3" sm="3">
                         <h3 className="title">Salon HUSH</h3>
                         <p>
                             1122 Thomasville Rd., Ste. 6<br/>
@@ -23,7 +27,7 @@ const Footer: React.FC = () => {
                         </p>
                     </MDBCol>
 
-                    <MDBCol md="4">
+                    <MDBCol md="3" sm="3">
                         <h5 className="title">HOURS</h5>
                         <ul>
                             <li className="list-unstyled">
@@ -51,7 +55,7 @@ const Footer: React.FC = () => {
 
                     </MDBCol>
 
-                    <MDBCol md="1">
+                    <MDBCol md="3" sm="3">
 
                         <h5 className="title">EXPLORE</h5>
                         <ul>
@@ -66,6 +70,10 @@ const Footer: React.FC = () => {
                             </li>
 
                         </ul>
+                    </MDBCol>
+                    <MDBCol md="3" sm="12">
+
+                        <Image className="opacity-60 mr-1" src={logo} alt="logo" roundedCircle/>
                     </MDBCol>
 
                 </MDBRow>

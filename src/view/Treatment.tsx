@@ -4,7 +4,7 @@ import {Container, Image} from "react-bootstrap";
 import ServiceMenu from "../components/ServiceMenu";
 import MetaDecorator from "../components/MetaDecorator";
 
-const Tratement: React.FC = (ImageState) => {
+const Treatement: React.FC = () => {
 
     return (
 
@@ -57,4 +57,4 @@ const Tratement: React.FC = (ImageState) => {
 
     )
 }
-export default Tratement;
+export default Treatement;
