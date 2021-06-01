@@ -21,7 +21,7 @@ const Header: React.FC = () => {
                     <Nav.Link href="/about">ABOUT US</Nav.Link>
                 </Nav>
                 <Nav>
-                    <Nav.Link href="#deets">BOOK ONLINE</Nav.Link>
+                    <Nav.Link href="/booking">BOOK ONLINE</Nav.Link>
                     <Nav.Link eventKey={2} href="/contacts">
                         CONTACTS
                     </Nav.Link>

@@ -10,7 +10,7 @@ const About: React.FC = () => {
             <Image src={cv3} alt='cover' fluid/>
             <div className='content'>
                 <h1 className='font-link' ><b>ABOUT US</b></h1>
-                <h4 className='font-link'><b>THE EIGHT FIVE ZERO SALON DIFFERENCE</b></h4>
+                <h4 className='font-link'><b>Salon HUSH DIFFERENCE</b></h4>
                 <h5 className='font-link'>Our carefully chosen and highly trained staff is here to exceed your <br/>expectations.
                     The same goes for our elegant salon space – dedicated to <br/>guest comfort – and our devotion
                     to innovation and artistry. We’re focused <br/>on making your day and continually raising the
