@@ -50,10 +50,12 @@ const Contact: React.FC = () => {
                             <Form.Label>Password</Form.Label>
                             <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
+
                         <Form.Group controlId="formBasicTextArea">
                             <Form.Label>Message</Form.Label>
-                            <Form.Control type="text-area" placeholder="Type your message" />
+                            <Form.Control as="textarea" placeholder="Type your message" rows={3} />
                         </Form.Group>
+
                         <Form.Group controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Check me out" />
                         </Form.Group>

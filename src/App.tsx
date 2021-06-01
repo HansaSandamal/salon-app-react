@@ -15,6 +15,7 @@ import About from './view/About';
 import Contact from './view/Contact';
 import Salon from './view/Salon';
 import Treatment from './view/Treatment';
+import Booking from "./view/Booking";
 
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
                     </Route>
                     <Route path="/treatments">
                         <Treatment/>
+                    </Route>
+                    <Route path="/booking">
+                        <Booking/>
                     </Route>
                     <Route path="/">
                         <Home/>
