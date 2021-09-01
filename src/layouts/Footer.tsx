@@ -14,8 +14,8 @@ const Footer: React.FC = () => {
                     <MDBCol md="3" sm="3">
                         <h3 className="title">Salon HUSH</h3>
                         <p>
-                            344 Temple Rd., Ste. 6<br/>
-                            Colombo, FL 32303<br/>
+                            344 Temple Rd.,<br/>
+                            Colombo 07, FL 32303<br/>
                             850.224.1814<br/>
                             <MDBBadge color="elegant-color">
                                 <MDBIcon fab icon="facebook-f"/>
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
 
                         </ul>
                     </MDBCol>
-                    <MDBCol md="3" sm="12">
+                    <MDBCol md="2" sm="12">
 
                         <Image className="opacity-60 mr-1" src={logo} alt="logo" roundedCircle/>
                     </MDBCol>

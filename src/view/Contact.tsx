@@ -1,18 +1,29 @@
 import React from "react";
 import cv1 from "../assets/images/cv1.jpg";
 import {Button, Container, Form, Image} from "react-bootstrap";
-import { MDBIcon } from "mdbreact";
-
+import {MDBIcon} from "mdbreact";
+import {useForm} from "react-hook-form";
 import Swal from "sweetalert2";
 import MetaDecorator from "../components/MetaDecorator";
 
-const Contact: React.FC = () => {
-    const handleOnClick=()=>Swal.fire({
+type ContactState = {
+    email: string
+    password: string
+    text: string
+}
+const Contact: React.FC<ContactState> = (state) => {
+    const {register, handleSubmit, formState: {errors}} = useForm<ContactState>();
+    const onSubmit = handleSubmit(data => {
+        // alert(JSON.stringify(data))
+        console.log(data)
+    });
+    const handleOnClick = () => Swal.fire({
         position: 'center',
         icon: 'success',
         title: 'Your message has been send',
         showConfirmButton: false,
-        timer: 1500
+        timer: 1500,
+
     });
 
     return (
@@ -25,8 +36,9 @@ const Contact: React.FC = () => {
 
                 <div className="col col-lg-2">
                     <h5 className='font-link'><b>Salon HUSH</b></h5>
-                    <h6 className='font-link'>1122 Thomasville Rd., Ste. 6<br/>
-                        Tallahassee, FL 32303</h6>
+                    <h6 className='font-link'> 344 Temple Rd.,<br/>
+                        Colombo 07, <br/>FL 32303
+                    </h6>
                     <h5 className='font-link'><b>HOURS</b></h5>
                     <h6 className='font-link'>Monday – Saturday 9am – 8pm
                         <br/>
@@ -37,10 +49,12 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="col-md-auto">
                     <h5 className='font-link'><b>SEND US A MESSAGE</b></h5>
-                    <Form>
+
+                    <Form onSubmit={onSubmit}>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Control {...register('email')} type="email" placeholder="Enter email"/>
+                            {errors.email && <p>* email is required</p>}
                             <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                             </Form.Text>
@@ -48,18 +62,20 @@ const Contact: React.FC = () => {
 
                         <Form.Group controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
+                            <Form.Control{...register('password')} type="password" placeholder="Password"/>
+                            {errors.password && <p>* password is required</p>}
                         </Form.Group>
 
                         <Form.Group controlId="formBasicTextArea">
                             <Form.Label>Message</Form.Label>
-                            <Form.Control as="textarea" placeholder="Type your message" rows={3} />
+                            <Form.Control {...register('text')} as="textarea" placeholder="Type your message" rows={3}/>
+                            {errors.text && <p>* message is required</p>}
                         </Form.Group>
 
                         <Form.Group controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Check me out" />
+                            <Form.Check type="checkbox" label="Check me out"/>
                         </Form.Group>
-                        <Button  variant="dark" type="submit" onClick={() => handleOnClick()}>
+                        <Button variant="dark" type="submit" onClick={() => handleOnClick()}>
                             Submit
                         </Button>
                     </Form>

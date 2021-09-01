@@ -29,7 +29,7 @@ function App() {
                         <About/>
                     </Route>
                     <Route path="/contacts">
-                        <Contact/>
+                        <Contact password={''} email={''} text={''}/>
                     </Route>
                     <Route path="/salon">
                         <Salon/>
