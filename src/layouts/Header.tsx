@@ -12,7 +12,7 @@ const Header: React.FC = () => {
                 <Nav className="mr-auto">
                     <Nav.Link href="/">HOME</Nav.Link>
 
-                    <NavDropdown title="SERVICES" id="collasible-nav-dropdown">
+                    <NavDropdown title="SERVICES" id="collapsible-nav-dropdown">
                         <NavDropdown.Item href="/salon">Salon</NavDropdown.Item>
 
                         <NavDropdown.Divider/>

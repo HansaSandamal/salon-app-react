@@ -7,7 +7,7 @@ import SignUp from "../components/SignUp";
 
 const Booking: React.FC = () => {
     const [open, setOpen] = useState(true);
-    const [open2, setOpen2] = useState(false);
+
 
     return (
         <React.Fragment>
@@ -27,19 +27,19 @@ const Booking: React.FC = () => {
 
                     Thank you!</h5>
                 <br/>
-                <Button onClick={() => setOpen(!open)}
-                        aria-controls="example-collapse-text"
-                        aria-expanded={open && !open2} variant="dark">Sign In</Button>
-                <Button onClick={() => setOpen2(!open2)}
-                        aria-controls="example-collapse-text2"
-                        aria-expanded={!open && open2}
+                <Button onClick={() => setOpen(false)}
+                        variant="dark">Sign In</Button>
+                <Button onClick={() => setOpen(true)}
                         variant="outline-dark">Sign Up</Button>
-                <Collapse in={open}>
+
+
+                <Collapse in={!open}>
                     <div id="example-collapse-text">
                         <SignIn/>
                     </div>
                 </Collapse>
-                <Collapse in={!open && open2}>
+
+                <Collapse in={open}>
                     <div id="example-collapse-text2">
                         <SignUp/>
                     </div>
