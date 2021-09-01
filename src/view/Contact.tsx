@@ -11,7 +11,7 @@ type ContactState = {
     password: string
     text: string
 }
-const Contact: React.FC<ContactState> = (state) => {
+const Contact: React.FC<ContactState> = () => {
     const {register, handleSubmit, formState: {errors}} = useForm<ContactState>();
     const onSubmit = handleSubmit(data => {
         // alert(JSON.stringify(data))

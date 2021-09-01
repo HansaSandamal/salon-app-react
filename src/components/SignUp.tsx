@@ -9,7 +9,7 @@ type SignUpState = {
     isCheck: boolean
 }
 
-const SignUp: React.FC<SignUpState> = (state) => {
+const SignUp: React.FC<SignUpState> = () => {
 
     const {register, handleSubmit,formState: { errors }} = useForm<SignUpState>();
     const onSubmit =handleSubmit((data) =>{

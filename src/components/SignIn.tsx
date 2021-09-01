@@ -6,7 +6,7 @@ type SignInState = {
     email: string
     password: string
 }
-const SignIn: React.FC<SignInState> = (state) => {
+const SignIn: React.FC<SignInState> = () => {
 
     const {register, handleSubmit,formState:{errors}} = useForm<SignInState>();
     const onSubmit= handleSubmit((data) =>{
