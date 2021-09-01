@@ -41,7 +41,7 @@ const Booking: React.FC = () => {
 
                 <Collapse in={open}>
                     <div id="example-collapse-text2">
-                        <SignUp/>
+                        <SignUp email={''} name={''} isCheck={false} password={''}/>
                     </div>
                 </Collapse>
 

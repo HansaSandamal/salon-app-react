@@ -14,8 +14,8 @@ const Footer: React.FC = () => {
                     <MDBCol md="3" sm="3">
                         <h3 className="title">Salon HUSH</h3>
                         <p>
-                            1122 Thomasville Rd., Ste. 6<br/>
-                            Tallahassee, FL 32303<br/>
+                            344 Temple Rd., Ste. 6<br/>
+                            Colombo, FL 32303<br/>
                             850.224.1814<br/>
                             <MDBBadge color="elegant-color">
                                 <MDBIcon fab icon="facebook-f"/>
